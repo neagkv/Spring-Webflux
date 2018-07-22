@@ -1,4 +1,4 @@
-package com.dev.springwebfluxrest.bootstrap;
+package com.dev.springwebfluxrest.loaddata;
 
 import com.dev.springwebfluxrest.domain.Category;
 import com.dev.springwebfluxrest.domain.Vendor;
@@ -7,17 +7,16 @@ import com.dev.springwebfluxrest.repository.VendorRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-
 /**
  * @author Kevin Neag
  */
 @Component
-public class Bootstrap implements CommandLineRunner {
+public class Boot implements CommandLineRunner {
 
     private final CategoryRepository categoryRepository;
     private final VendorRepository vendorRepository;
 
-    public Bootstrap(CategoryRepository categoryRepository, VendorRepository vendorRepository) {
+    public Boot(CategoryRepository categoryRepository, VendorRepository vendorRepository) {
         this.categoryRepository = categoryRepository;
         this.vendorRepository = vendorRepository;
     }
