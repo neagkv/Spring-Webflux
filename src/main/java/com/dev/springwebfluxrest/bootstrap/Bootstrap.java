@@ -7,7 +7,6 @@ import com.dev.springwebfluxrest.repository.VendorRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import java.sql.SQLOutput;
 
 /**
  * @author Kevin Neag
